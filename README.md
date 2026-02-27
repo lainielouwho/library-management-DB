@@ -37,12 +37,14 @@ The provided query script includes examples for:
 * Administrative Tracking: Identifying overdue books by comparing Due_date against a reference date.
 
 
-## Usage Examples
+## Example Query: Stock by Genre
 
-### 1. Data Insertion
-The system allows for easy entry of new inventory. For example, adding a publisher:
+To see which genres are most prevalent in the library, the system uses the following logic:
 
 ```sql
-INSERT INTO PUBLISHER (Publisher_id, Publisher_name, Country) 
-VALUES (11, 'Bloomsbury', 'UK');
+SELECT Genre, SUM(Total_stock) AS Total_Books
+FROM BOOK
+GROUP BY Genre
+ORDER BY Total_Books DESC;
+
 
