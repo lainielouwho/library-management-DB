@@ -21,7 +21,21 @@ The database is built on a relational model with the following tables:
 | **`FINE`** | `Fine_id` | Financial penalties associated with specific loans. |
 | **`BOOK_AUTHOR`** | `(Book_id, Author_id)` | Junction table mapping books to their respective authors. |
 
-##Getting Started
+
+## Getting Started
+### 1. Instalization
+Run the Library DB.sql script first to create the table structures.
+### 2. Populating Data
+Use the some_queries.sql file to insert sample records for:
+-Publishers: (e.g., Bloomsbury, Tor Books).
+-Authors: (e.g., Neil Gaiman, Marie Lu).
+-Books: (e.g., Coraline, Ender's Game).
+### 3. Common Operations
+The provided query script includes examples for:
+-Member Management: Adding and deleting member records.
+-Data Analysis: Filtering books by publication year and calculating total stock grouped by genre.
+-Administrative Tracking: Identifying overdue books by comparing Due_date against a reference date.
+
 
 ## Usage Examples
 
