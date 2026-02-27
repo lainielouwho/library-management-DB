@@ -1,13 +1,13 @@
-# Library Management System
+# MetaBooks: A Library Management System
 
 A relational database management system (RDBMS) designed to track library assets, member records, and borrowing activities. This project uses SQL to handle complex relationships between books, authors, publishers, and loans.
 
-## 📂 Project Structure
+## Project Structure
 
 * **`Library DB.sql`**: Contains the Data Definition Language (DDL) to create the `LIBRARY` database and its relational tables.
 * **`some_queries.sql`**: Contains sample Data Manipulation Language (DML) for inserting records and administrative queries.
 
-## 🏗️ Database Schema
+## Database Schema
 
 The database is built on a relational model with the following tables:
 
@@ -21,7 +21,9 @@ The database is built on a relational model with the following tables:
 | **`FINE`** | `Fine_id` | Financial penalties associated with specific loans. |
 | **`BOOK_AUTHOR`** | `(Book_id, Author_id)` | Junction table mapping books to their respective authors. |
 
-## 🚀 Usage Examples
+##Getting Started
+
+## Usage Examples
 
 ### 1. Data Insertion
 The system allows for easy entry of new inventory. For example, adding a publisher:
