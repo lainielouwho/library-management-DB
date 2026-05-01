@@ -151,24 +151,3 @@ VALUES (your_member_id, book_id, '2026-01-01', '2026-01-15', 'returned');
 
 ---
 
-## Common Issues
-
-| Issue | Fix |
-|-------|-----|
-| `Access denied for user 'root'` | Update password in `main.py` and `recommendations_router.py` |
-| `Unknown command '\U'` in MySQL | Use forward slashes: `source C:/path/to/file.sql` |
-| `Unknown database 'library'` | Run `CREATE DATABASE LIBRARY;` before sourcing SQL files |
-| Duplicate entry errors on import | `TRUNCATE` the affected table before re-running the insert script |
-| `npm not recognized` | Install Node.js from [nodejs.org](https://nodejs.org), then restart your terminal |
-| No recommendations showing | Add completed loans (`Status='returned'`) to the member's loan history |
-
----
-
-## Example Query: Stock by Genre
-
-```sql
-SELECT Genre, SUM(Total_stock) AS Total_Books
-FROM BOOK
-GROUP BY Genre
-ORDER BY Total_Books DESC;
-```
