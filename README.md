@@ -1,4 +1,4 @@
-# MetaBooks 📚
+# MetaBooks
 ### A Full-Stack Library Management System
 
 MetaBooks is a full-stack library management system for tracking books, members, loans, fines, and reservations. It includes a personalized book recommendation engine based on each member's reading history.
@@ -129,7 +129,7 @@ npm run dev
 
 ---
 
-## Recommendations Feature ✨
+## Recommendations Feature
 
 Logged-in members see a **"For You"** link in the navbar. The engine scores unread, in-stock books based on the member's loan history:
 
